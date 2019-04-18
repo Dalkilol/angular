@@ -1,0 +1,36 @@
+<div style="margin: auto; width: 40%" class="mt-4">
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+
+    <p>Bonjour {{ nom }}</p>
+  </h1>
+</div>
+
+
+<div class="form">
+<h5>Binding property</h5>
+<input type="text" class = "form-control" value="{{ name }}">
+
+<input type="text" class = "form-control" [value] = "name">
+<br />
+<br />
+<hr>
+<br />
+
+<h5>Binding event</h5>
+<p>Name : {{ name }}</p>
+<button class = "btn btn-primary" (click) = "changeName()">Change name</button>
+
+<br />
+<br />
+<hr>
+<br />
+
+<h5>Binding bi directionnel</h5>
+
+<input type="text" [(ngModel)] = "name">
+<p></p>
+</div>
+</div>

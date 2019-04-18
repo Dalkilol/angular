@@ -1,0 +1,18 @@
+<div style="margin: auto; width: 35%" class="mt-4">
+
+
+  <form #forme="ngForm" (ngSubmit)="createUser()">
+    <div class="form-group">
+      <input type="text" #nomAction="ngModel" class="form-control" placeholder="nom" required [(ngModel)]="user.nom" name="nom">
+      
+    </div>
+
+    <div class="form-group">
+        <input type="text" #nomAction="ngModel" class="form-control" placeholder="mail" required [(ngModel)]="user.mail" name="email">
+        
+      </div>
+
+    <button [disabled]="!forme.form.valid" class="btn btn-primary">Valider</button> 
+  </form>
+
+</div>

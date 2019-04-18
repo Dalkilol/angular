@@ -1,0 +1,31 @@
+<div style="margin: auto; width: 35%;" class="mt-4">
+
+  <p>Directive (ngFor => Boucle)</p>
+
+  <ul>
+    <li *ngFor="let val of noms">
+      {{ val }}
+    </li>
+
+
+
+  </ul>
+
+<div *ngIf="show"> zone à cacher (je crois) </div>
+<button (click)="affCach()" class = "btn btn-primary">Afficher / Cacher </button>
+
+
+<hr>
+
+<h5> Les pipes </h5>
+
+
+{{ msg | uppercase }}
+<p>ci-dessus nous avons piped msg en caps lock</p>
+
+{{ d }} date non convertie <br>
+{{ d | date:'d/M/y' }} date  convertie
+
+
+
+</div>
